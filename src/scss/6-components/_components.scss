@@ -1,0 +1,34 @@
+/*
+    Components
+
+    Specific cosmetic elements of UI,
+    first layer that introduce visual styling:
+    buttons, forms, products-list
+
+    Use explicit class names (eg. .products-list)
+*/
+
+
+
+/*
+    Vendor components/classes
+*/
+/* vendors */
+/* @import './font-awesome/fontawesome'; */ // already imported in tools
+@import './font-awesome/solid';
+@import './font-awesome/regular';
+@import './font-awesome/brands';
+
+
+
+/*
+    Project components
+*/
+@import 'header';
+@import 'footer';
+
+@import 'buttons';
+
+@import 'c-hero';
+@import 'c-gallery';
+@import 'c-card';

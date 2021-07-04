@@ -1,2 +1,2 @@
-# berry-itcss
-ITCSS Architechture implemented by Berry
+# Berry ITCSS
+ITCSS Architecture implemented by Berry
