@@ -6,7 +6,7 @@
     // slashy gradient blue/lightblue
     position: relative;
     @include mq(md) {
-        background: linear-gradient($slashy_degs, rgba(darken($color_blue_royal, 5%), 0.9) 0%, rgba(darken($color_blue_royal, 5%), 0.9) 50%, rgba(lighten($color_blue_royal, 40%), 1) 50.1%, rgba(lighten($color_blue_royal, 40%), 1) 100%);
+        background: linear-gradient($slashy_degs, rgba(darken($color_primary, 5%), 0.9) 0%, rgba(darken($color_primary, 5%), 0.9) 50%, rgba(lighten($color_primary, 40%), 1) 50.1%, rgba(lighten($color_primary, 40%), 1) 100%);
     }
 
     &:after {
@@ -77,7 +77,7 @@
                 padding-left: #{$grid_col_gap / 2};
                 padding-right: #{$grid_col_gap / 2};
                 @include py($space_2xl);
-                background: $color_blue_royal;
+                background: $color_primary;
             }
 
             @include mq(md) {
@@ -89,32 +89,32 @@
             }
 
             .c-prefooter__block__button {
-                color: $color_blue_royal;
-                background: $color_blue_sky2;
+                color: $color_primary;
+                background: $color_secondary;
 
                 &:hover {
-                    background: lighten($color_blue_sky, 5%);
+                    background: lighten($color_secondary, 5%);
                 }
 
                 .button__icon {
-                    background: $color_blue_dark;
+                    background: $color_secondary;
 
                     i {
-                        color: $color_blue_sky2;
+                        color: $color_secondary;
                     }
                 }
             }
         }
 
         &--2 {
-            color: $color_blue_dark;
+            color: $color_secondary;
 
             @include mq($until: md) {
                 margin-left: -#{$grid_col_gap / 2};
                 margin-right: -#{$grid_col_gap / 2};
                 padding-left: #{$grid_col_gap / 2};
                 padding-right: #{$grid_col_gap / 2};
-                background: $color_blue_sky;
+                background: $color_secondary;
                 @include py($space_2xl);
                 position: relative;
 
@@ -155,24 +155,24 @@
             .c-prefooter__block__button {
                 @include mq($until: md) {
                     color: $color_white;
-                    background: $color_blue_royal;
+                    background: $color_primary;
                 }
-                color: $color_blue_royal;
-                background: $color_blue_sky2;
+                color: $color_primary;
+                background: $color_secondary;
                 @include mq(lg) {
-                    background: $color_blue_royal;
+                    background: $color_primary;
                     color: $color_white;
                 }
 
 
                 &:hover {
-                    background: lighten($color_blue_royal, 5%);
+                    background: lighten($color_primary, 5%);
                 }
 
                 .button__icon {
                     background: $color_green;
                     i {
-                        color: $color_blue_dark;
+                        color: $color_secondary;
                     }
                 }
             }
@@ -421,7 +421,7 @@
             }
 
             &:hover {
-                color: $color_blue_royal;
+                color: $color_primary;
                 i {
                     transform: translateX(-50%) translateY(calc(-50% - 2px));
                 }

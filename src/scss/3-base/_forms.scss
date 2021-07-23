@@ -16,7 +16,7 @@ textarea {
     line-height: 1;
     border-radius: $border_radius;
     padding: 0px $space_xs;
-    border: thin solid lighten($color_grey-dark, 40%);
+    border: thin solid lighten($color_grey, 40%);
     max-width: 100%;
     transition: $trans_linear_fast;
     font-size: 16px;
@@ -52,7 +52,7 @@ select {
     line-height: 1;
     padding: 0px $space_xl 0px $space_m;
     border-radius: $border_radius;
-    border: thin solid lighten($color_grey-dark, 40%);
+    border: thin solid lighten($color_grey, 40%);
     background: $color_white;
     -moz-appearance: none;
     -webkit-appearance: none;
