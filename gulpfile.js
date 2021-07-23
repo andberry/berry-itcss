@@ -26,10 +26,7 @@ function cssDev() {
     .pipe(autoprefixer())
     .pipe(sourcemaps.write())
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(dest("./css/"))
-    .pipe(dest("./pl/source/css/")) // Pattern Lab
-    .pipe(browserSync.stream());
-
+    .pipe(dest("./dist/"))
 }
 
 
@@ -42,9 +39,7 @@ function cssProd() {
     }).on('error', sass.logError))
     .pipe(autoprefixer({ grid: 'no-autoplace' }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(dest("./css/"))
-    .pipe(dest("./pl/source/css/")) // Pattern Lab
-    // .pipe(touch());
+    .pipe(dest("./dist/"))
 }
 
 
