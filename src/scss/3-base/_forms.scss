@@ -12,7 +12,7 @@ input[type="file"],
 input[type="date"],
 textarea {
     width: 100%;
-    height: $form-input_heigh;
+    height: $form-input_height;
     line-height: 1;
     border-radius: $border_radius;
     padding: 0px $space_xs;
@@ -49,7 +49,6 @@ textarea {
 select {
     width: 100%;
     height: $form-input_heigh;
-    line-height: 1;
     padding: 0px $space_xl 0px $space_m;
     border-radius: $border_radius;
     border: thin solid lighten($color_grey, 40%);
