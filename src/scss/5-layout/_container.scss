@@ -29,16 +29,21 @@
     max-width: $container_fluid_max_width;
     margin-left: auto;
     margin-right: auto;
-    padding-left: #{$grid_col_gap / 2};
-    padding-right: #{$grid_col_gap / 2};
-}
+    padding-left: $grid_col_gap;
+    padding-right: $grid_col_gap;
 
-.container{
-    @include container();
+    @include mq(xl) {
+        padding-left: #{$grid_col_gap / 2};
+        padding-right: #{$grid_col_gap / 2};
+    }
 
     .container {
         @include px(0);
     }
+}
+
+.container{
+    @include container();
 }
 
 

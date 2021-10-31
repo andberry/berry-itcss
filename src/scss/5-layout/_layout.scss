@@ -47,7 +47,12 @@
         @include grid-cell-span(2);
 
         @include mq(md) {
-            @include grid-cell-span(8, 1);
+            @include grid-cell-span(12);
+        }
+        
+        @include mq(lg) {
+            @include grid-cell-span(7, 1);
+            padding-right: $space_xl;
         }
     }
 
@@ -56,13 +61,12 @@
         margin-top: $space_2xl;
 
         @include mq(md) {
-            @include grid-cell-span(4, 9);
-            margin-top: 0px;
-            padding-left: $space_l;
+            @include grid-cell-span(12);
         }
 
-        @include mq(xl) {
-            padding-left: $space_2xl;
+        @include mq(lg) {
+            @include grid-cell-span(5, 8);
+            margin-top: 0px;
         }
     }
 }
