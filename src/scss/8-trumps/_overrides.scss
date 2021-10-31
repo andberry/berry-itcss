@@ -2,6 +2,8 @@ nav li:before {
     position: absolute;
 }
 
+
+
 /*
     lightgallery.js
 */
@@ -18,5 +20,13 @@ nav li:before {
 
     .lg-prev {
         left: 5px;
+    }
+}
+
+
+
+.hide-desktop {
+    @include mq(lg) {
+        display: none !important;
     }
 }

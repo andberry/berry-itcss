@@ -1,0 +1,118 @@
+/*
+    Search results page
+*/
+.path-search {
+    #main-content {
+        @include py($space_2xl);
+        @include mq(xl) {
+            @include py($space_3xl);
+        }
+    }
+
+    #search-form {
+        #edit-basic {
+            display: flex;
+        }
+
+        label {
+            display: none;
+        }
+
+        #edit-submit {
+            margin-left: $space_xs;
+        }
+    }
+
+    #edit-help-link {
+        display: none;
+    }
+
+    .search-results {
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            margin: $space_2xl 0px;
+        }
+    }
+
+    /* remove 'node' from breadcrumbs if we are in search page */
+    .breadcrumb {
+        ol {
+            li:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+/*
+    Login page/form
+*/
+body.path-user {
+    .region-content {
+        @include py($space_3xl);
+    }
+}
+
+.user-login-form {
+    max-width: 600px;
+
+    .description {
+        display: none;
+    }
+}
+
+
+
+/*
+    Trying mask image
+*/
+/*
+#main-content {
+    background: $color_blue;
+    position: relative;
+    margin-top: 0px;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -80px;
+        left: 0px;
+        height: 80px;
+        width: 100%;
+        background: $color_blue;
+        mask-image: url('../images/mask-top-curve.svg');
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        z-index: 10;
+
+    }
+}
+*/
+
+
+
+/*
+    Sorting Signage Page
+*/
+body.path-sorting-signage {
+    .region-content {
+        .block-webform {
+            background: $color_grey;
+        }
+    }
+}
+
+
+
+/*
+    Refuse reduce reuse page
+*/
+body.path-refuse-reduce-reuse {
+    .c-carousel-cards {
+        background-color: $color_grey;
+    }
+}
