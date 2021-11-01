@@ -18,7 +18,7 @@ $mq-breakpoints: (
 );
 
 // viewport/breakpoint debug: comment out in production
-$mq-show-breakpoints: (md, lg, xl, xxl);
+// $mq-show-breakpoints: (md, lg, xl, xxl);
 
 
 
@@ -129,8 +129,6 @@ $colors: (
 $font_family_1: 'Open Sans', sans-serif;
 $font_family_2: 'Lato', sans-serif;
 
-$font_family_icons: 'Font Awesome 5 Pro';
-$fa-font-path: '../fonts/font-awesome';
 
 
 /*

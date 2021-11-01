@@ -47,53 +47,6 @@
 
 
 
-/*
-    Callout link
-*/
-.c-callout-link {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 700;
-    position: relative;
-
-    line-height: 1;
-    color: $color_primary;
-    transition: $trans_linear_fast;
-    padding: 5px 21px 3px 0px;
-
-    &:after {
-        display: block;
-        /*
-        position: absolute;
-        top: 4px;
-        */
-        @include abs-vertical-center();
-        right: 3px;
-        font-family: $font_family_icons;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1;
-        content: fa-content($fa-var-chevron-right);
-        transition: $trans_easeOutCubic_fast;
-        color: $color_primary;
-        font-size: 1rem;
-    }
-
-    &:hover {
-        color: $color_green;
-        transition: $trans_linear;
-
-        &:after {
-            color: $color_green;
-            transition: $trans_easeOutCubic_fast;
-            transform: translateY(-50%) translateX(3px);
-        }
-    }
-}
-
-
-
 .c-button-icon {
     @extend .c-button;
     padding-right: $space_3xl;

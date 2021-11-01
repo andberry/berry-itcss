@@ -136,11 +136,9 @@ details {
             position: absolute;
             top: $space_l;
             right: $space_xl;
-            font-family: $font_family_icons;
             font-size: remCalc(32);
             font-weight: 300;
             line-height: 1;
-            content: fa-content($fa-var-angle-down);
             color: $color_blue;
             transition: $trans_easeOutCubic_fast;
         }
@@ -160,10 +158,6 @@ details {
 
         summary {
             color: $color_green;
-        }
-
-        summary:after {
-            content: fa-content($fa-var-angle-up);
         }
     }
 }

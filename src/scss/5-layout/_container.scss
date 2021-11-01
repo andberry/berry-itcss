@@ -7,8 +7,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: #{$grid_col_gap / 2};
-    padding-right: #{$grid_col_gap / 2};
+    padding-left: math.div($grid_col_gap, 2);
+    padding-right: math.div($grid_col_gap, 2);
 
     @each $breakpointName, $breakpointMaxWidth in $container_fixed_max_widths{
         @include mq($breakpointName) {
@@ -33,8 +33,8 @@
     padding-right: $grid_col_gap;
 
     @include mq(xl) {
-        padding-left: #{$grid_col_gap / 2};
-        padding-right: #{$grid_col_gap / 2};
+        padding-left: math.div($grid_col_gap, 2);
+        padding-right: math.div($grid_col_gap, 2);
     }
 
     .container {
