@@ -22,11 +22,3 @@ nav li:before {
         left: 5px;
     }
 }
-
-
-
-.hide-desktop {
-    @include mq(lg) {
-        display: none !important;
-    }
-}

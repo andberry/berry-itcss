@@ -3,7 +3,10 @@
 
     Overrides and helper classes (new !important)
 */
+@import 'u-colors';
+@import 'u-spacings';
+@import 'u-typography';
+@import 'u-visibility';
 
 @import 'overrides';
 @import 'uikit-overrides';
-@import 'pages';

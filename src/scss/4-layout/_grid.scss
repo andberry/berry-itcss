@@ -1,11 +1,11 @@
 /*
     Grid container
 */
-.grid {
+.l-grid {
     @include grid();
 }
 
-.grid--super {
+.l-grid--super {
     @include super-grid();
 }
 
@@ -16,7 +16,7 @@
 */
 // Width classes: no media queries
 @for $i from 1 to $grid_cols + 1 {
-    .cell-#{$i} {
+    .l-cell-#{$i} {
         @include grid-cell-span($i);
     }
 }
@@ -24,7 +24,7 @@
 // Width classes: per breakpoints
 @each $breakpointName, $breakpointValue in $mq-breakpoints{
     @for $i from 1 to $grid_cols + 1 {
-        .#{$breakpointName}\:cell-#{$i} {
+        .#{$breakpointName}\:l-cell-#{$i} {
             @include mq($breakpointName){
                 @include grid-cell-span($i);
             }

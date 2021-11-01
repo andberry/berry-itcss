@@ -37,12 +37,12 @@
         padding-right: math.div($grid_col_gap, 2);
     }
 
-    .container {
+    .l-container {
         @include px(0);
     }
 }
 
-.container{
+.l-container{
     @include container();
 }
 
